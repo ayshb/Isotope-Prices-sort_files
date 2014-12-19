@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://fiddle.jshell.net/aybalasubramanian/39a2d/show/light/ -->
+<html class="csstransforms csstransforms3d csstransitions"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Isotope - sort by price - jsFiddle demo by aybalasubramanian</title>
+  
+  <script type="text/javascript" src="jquery-1.7.1.js"></script><style type="text/css"></style>
+  
+  <link rel="stylesheet" type="text/css" href="normalize(1).css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+    
+      <script type="text/javascript" src="jquery.isotope.js"></script>
+    
+  
+  <style type="text/css">
+    body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+#container {
+  border: 1px solid;
+  padding: 3px;
+}
+
+.item {
+  width: 70px;
+  height: 70px;
+  margin: 3px;
+  float: left;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 1px black;
+}
+
+.item.next {
+  width: 60px;
+  height: 60px;
+  border: 5px solid black;
+  border-radius: 35px;
+}
+
+.red { background: red; }
+.blue { background: blue; }
+.green { background: green; }
+.yellow { background: yellow; }
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+  </style>
+  
+</head>
+<body>
+  <p>
+  <a href="http://fiddle.jshell.net/aybalasubramanian/39a2d/show/light/#" data-isotope-option="{ &quot;sortBy&quot;: &quot;price&quot; }">price</a>
+  <a href="http://fiddle.jshell.net/aybalasubramanian/39a2d/show/light/#" data-isotope-option="{ &quot;sortBy&quot;: &quot;original-order&quot; }">original order</a>
+  <a href="http://fiddle.jshell.net/aybalasubramanian/39a2d/show/light/#" data-isotope-option="{ &quot;sortBy&quot;: &quot;color&quot; }">color</a>
+</p>
+    
+    
+<div id="container" class="isotope" style="position: relative; overflow: hidden; height: 152px;">
+  <div class="item red isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(3px, 3px, 0px);">$14</div>
+  <div class="item blue isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(79px, 3px, 0px);">$19.20</div>
+  <div class="item green isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(155px, 3px, 0px);">30</div>
+  <div class="item yellow isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(231px, 3px, 0px);">19</div>
+  <div class="item red isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(307px, 3px, 0px);">19.50</div>
+  <div class="item blue isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(383px, 3px, 0px);">$50.24</div>
+  <div class="item green isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(459px, 3px, 0px);">$100.24</div>
+  <div class="item yellow isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(535px, 3px, 0px);">$48</div>
+  <div class="item red isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(611px, 3px, 0px);">$10.10</div>
+  <div class="item blue isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(687px, 3px, 0px);">104</div>
+  <div class="item green isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(763px, 3px, 0px);">$103.20</div>
+  <div class="item yellow isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(839px, 3px, 0px);">$42</div>
+  <div class="item red isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(915px, 3px, 0px);">$19.2930</div>
+  <div class="item blue isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(991px, 3px, 0px);">$10</div>
+  <div class="item green isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(1067px, 3px, 0px);">$30</div>
+  <div class="item yellow isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(1143px, 3px, 0px);">$10</div>
+  <div class="item red isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(3px, 79px, 0px);">$14</div>
+  <div class="item blue isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(79px, 79px, 0px);">$5</div>
+  <div class="item green isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(155px, 79px, 0px);">$0.24</div>
+  <div class="item yellow isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(231px, 79px, 0px);">10</div>
+</div>
+
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+$(function(){
+
+  var $container = $('#container');
+
+  $container.isotope({
+    itemSelector: '.item',
+    getSortData: {
+      price: function( $item ) {
+        // remove possible dollar sign
+        var text = $item.text().replace( '$', '' );
+        // convert to number
+        return parseFloat( text );
+      },
+      // for rainbows
+      color: function( $item ) {
+        return $item.css('backgroundColor');
+      }
+    }
+  });
+
+  $('[data-isotope-option]').click( function( event ) {
+    event.preventDefault();
+    var option = $(this).attr('data-isotope-option');
+    // convert string to object
+    option = JSON.parse( option );
+    $container.isotope( option );
+  });
+
+});
+
+//]]>  
+
+</script>
+
+
+
+
+
+
+
+</body></html>
